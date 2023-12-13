@@ -14,3 +14,5 @@
 >
 >   - 领域顶会：<https://tub-rip.github.io/eventvision2023/>
 
+- 什么是事件相机&SNN?<https://pan.baidu.com/s/1ALMETBpNQzisih-xcaP7iQ?pwd=y3xe>
+- 事件相机的调研12.9 & IJCAI-21【基于运动信息和Spiking神经网络的事件动作识别】 <https://pan.baidu.com/s/1KUxbSRdp6KcElHBsMJ3TNg?pwd=fpxv>
