@@ -30,7 +30,7 @@
 
 其中t表示时间步长，U[t]表示空间输入信息X[t]与时间输入H[t−1]耦合产生的膜电位，其中X[t]可通过Conv、MLP、self-attention等算子求得。当膜电位超过阈值uth时，神经元就会发出脉冲，否则就不会。因此，空间输出张量S[t]只包含1或0。Hea(·)是当x≥0时满足Hea(x) = 1，否则Hea(x) = 0的Heaviside阶跃函数。H[t]为时间输出，其中Vreset为激活输出峰值后设置的复位电位。β < 1为衰减因子，当脉冲神经元不放电时，膜电位U[t]衰减至H[t]。
 
-### 3.1整体架构
+### 3.1 整体架构
 
 图2所示为spike-driven transformer的概述，它包括四个部分:spike Patch Splitting (SPS)、SDSA、MLP和一个线性分类头。对于SPS部分，我们遵循[20]中的设计。给定二维图像序列I∈RT×C×H×W, Patch Splitting Module (PSM)，即前四个Conv层，线性投影并分割为N个具有D维通道的平顶spike patches s序列，其中T(图像在静态数据集中重复T次作为输入)，C, H, W表示时间步长，通道，二维图像序列的高度和宽度。然后使用另一个Conv层生成相对位置嵌入(RPE)。合起来，SPS部分写为:
 
