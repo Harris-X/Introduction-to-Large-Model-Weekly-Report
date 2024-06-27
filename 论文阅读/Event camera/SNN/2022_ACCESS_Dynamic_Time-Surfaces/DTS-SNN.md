@@ -113,7 +113,7 @@ HOTS使用一组TS作为字典，将其与输入TS进行比较，从而构建特
 
 ##### 2) UNFOLDING TIMESTAMP-ENCODING BANKS
 
-随后，时间戳编码库 $E (t) ∈ R^{P×H×W}$展开，**建立初步时间面图** $T (t) ∈ R^{P×H×W×(Rx×Ry)}$ ，其中 P × H × W 输入场中的每个位置都有一个以该位置为中心的 $R_x × R_y$ 初步时间面，即
+随后，时间戳编码库 $E (t) ∈ R^{P×H×W}$展开，**建立初步时间面（time-surface）图** $T (t) ∈ R^{P×H×W×(Rx×Ry)}$ ，其中 P × H × W 输入场中的每个位置都有一个以该位置为中心的 $R_x × R_y$ 初步时间面，即
 
 <img src="DTS-SNN.assets/image-20231229114949597.png" alt="image-20231229114949597" style="zoom:50%;" />
 
