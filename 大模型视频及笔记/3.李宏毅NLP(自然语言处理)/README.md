@@ -1,3 +1,0 @@
-- 视频：[李宏毅NLP(自然语言处理)](https://www.bilibili.com/video/BV1hM4y157xX)
-- 笔记参考：[博客参考](https://helloai.blog.csdn.net/category_9500748_2.html)
-- 视频：[李宏毅推荐自然语言处理](https://www.youtube.com/watch?v=OQQ-W_63UgQ&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
