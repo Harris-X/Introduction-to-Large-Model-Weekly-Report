@@ -6,7 +6,7 @@
 > - [Latex公式快速文档](https://mp.weixin.qq.com/s?__biz=MzAwOTM2NjU3MQ==&mid=2652275142&idx=4&sn=396dc796bc318634bd51db491aa22467&chksm=80829c82b7f5159497c07b4dd23df862ae240512b374fe33885dc67beab5430a8829c436f1c8&scene=27)
 > - [Markdown/LaTeX 数学公式和符号表](https://zhuanlan.zhihu.com/p/450465546)
 
-## 数学公式
+### 数学公式
 
 - [多行公式的处理](https://www.bilibili.com/video/BV15x411j7k6?p=12&vd_source=29520f96e7e37ed65f945d56966cc4db)
 
@@ -39,6 +39,9 @@ $$
 
 对齐符号`&`
 
+- [LaTeX 数学公式：如何正确使用乘号](https://www.imooc.com/article/338918)
+  - `\cdot`和`\ast`命令都表示乘号，但它们在某些情况下的表现略有不同。`\cdot`命令通常用于表示数字之间的乘法，而`\ast`命令有时用于表示向量或矩阵的乘法。
+
 ### 图片的插入
 
 <img src="assets/image-20240711225852262.png" alt="image-20240711225852262" style="zoom:67%;" />
@@ -52,5 +55,63 @@ htbp是LaTX中用于控制浮动体位置的一个选项集。浮动体（如图
 √ 这些选项可以组合使用，例如t表示首选放置在页面顶部，但如果不行就放置在代码所在的位置。
 默认情况下，如果你不提供任何选项，LaTeX会使用tbp作为默认值。
 √ 例如，begin{figure}[htbp]表示在尽量放在当前位置，如果不行就放在页面顶部，底部，或者单独一页。
+```
+
+### 伪代码
+
+> - 快速入门：<https://blog.csdn.net/wangh0802/article/details/80788550>
+> - 语法：<https://blog.csdn.net/kt1776133839/article/details/134419479>
+> - 更多的案例：<https://blog.csdn.net/hl156/article/details/132085995>
+> - 官方指导文件：<https://zhuanlan.zhihu.com/p/654374642>
+>
+
+一个实例
+
+引入包
+
+```
+\usepackage{algorithm}  
+\usepackage{algorithmic}  
+```
+
+伪代码
+
+```
+\begin{algorithm}[!h]
+	\caption{PARTITION$(A,p,r)$}%算法标题
+	\begin{algorithmic}[1]%一行一个标行号
+		\STATE $i=p$
+		\FOR{$j=p$ to $r$}
+		\IF{$A[j]<=0$}
+		\STATE $swap(A[i],A[j])$
+		\STATE $i=i+1$
+		\ENDIF
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+```
+
+### 表格
+
+> - 快速上手：<https://blog.csdn.net/weixin_49322652/article/details/133375810>
+> - <https://download.csdn.net/blog/column/11925364/129816219>
+> - 博客：<https://blog.csdn.net/m0_71819746/article/details/135738780>
+> - 生成工具：<https://www.latex-tables.com/>
+
+- 一个demo
+
+```
+\begin{table}[!htbp]
+\caption{\textbf{Classical table}}%title  
+\centering  
+\begin{tabular}{ccccc}% four columns  
+\hline %begin the first line  
+T 1 & T 2 & T 3 & T 4 \\  
+\hline %begin the second line  
+D1 & D2 & D3 & D4 \\  
+D5 & D6 & D7 & D8 \\  
+\hline %begin the third line  
+\end{tabular}  
+\end{table}
 ```
 
